@@ -6,7 +6,7 @@ import com.blade.mvc.http.Request;
 import com.blade.mvc.http.Response;
 
 @Path
-public class IndexController {
+public class Index {
 
     @GetRoute
     public String index(Request request) {

@@ -1,34 +1,14 @@
-#options (
-  safecall = true,
-  trimLeadingWhitespaces = true
-)
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <title>${title}</title>
     <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link href="/static/sticky-footer-navbar.css" rel="stylesheet" />
-    <style>
-        .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    ${shellStyle}
 </head>
 
 <body class="d-flex flex-column h-100">
-    #include ("nav.html")
+    ${shellNav}
       <!-- Begin page content -->
       <main role="main" class="flex-shrink-0">
         <div class="container">
@@ -38,12 +18,7 @@
         </div>
       </main>
     
-      <footer class="footer mt-auto py-3">
-        <div class="container">
-          <span class="text-muted">Place sticky footer content here.</span>
-        </div>
-      </footer>
-
+      #include("footer.html")
       <script src="/webjars/jquery/3.0.0/jquery.min.js"></script>
       <script src="/webjars/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
       <script src="/webjars/vue/2.5.13/vue.min.js"></script>
