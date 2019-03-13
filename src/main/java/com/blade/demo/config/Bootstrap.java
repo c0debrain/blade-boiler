@@ -17,7 +17,7 @@ public class Bootstrap implements BladeLoader {
     }
 
     private void initDb() {
-        Anima.open("jdbc:h2:file:~/demo;FILE_LOCK=FS;PAGE_SIZE=1024;CACHE_SIZE=8192", "sa", "");
+        //Anima.open("jdbc:h2:file:~/demo;FILE_LOCK=FS;PAGE_SIZE=1024;CACHE_SIZE=8192", "sa", "");
     }
 
 }

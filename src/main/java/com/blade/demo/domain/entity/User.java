@@ -12,6 +12,11 @@ public class User extends Model {
     private String realName;
     private Integer age;
 
+    public User(String username, int age) {
+        this.username = username;
+        this.age = age;
+    }
+    
     public Integer getId() {
         return id;
     }
