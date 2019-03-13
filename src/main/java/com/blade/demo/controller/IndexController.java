@@ -9,8 +9,9 @@ import com.blade.mvc.http.Response;
 public class IndexController {
 
     @GetRoute
-    public void index(Request request, Response response) {
-        response.text("Hello to index");
+    public String index(Request request) {
+        //response.text("Hello to index");
+        return "index";
     }
 
     @GetRoute("info")
